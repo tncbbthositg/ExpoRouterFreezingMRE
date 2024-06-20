@@ -48,10 +48,10 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="two"
+        name="freezable_stack"
         options={{
-          title: 'Tab Two',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: 'Freezable Stack',
+          tabBarIcon: ({ color }) => <TabBarIcon name="ambulance" color={color} />,
         }}
       />
     </Tabs>
