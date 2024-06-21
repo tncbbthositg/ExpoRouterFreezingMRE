@@ -21,7 +21,7 @@ export default () => {
       <Text style={styles.instructions}>
         I can't reproduce it if the modal is in the same stack though.
       </Text>
-      <Link href="./modal" asChild>
+      <Link href="./inner_modal" asChild>
         <Button title='Open the modal in the same stack.' />
       </Link>
     </View>
