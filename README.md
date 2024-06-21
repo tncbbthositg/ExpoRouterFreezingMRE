@@ -5,6 +5,23 @@ the application preventing user interactions until tabs are switched and switche
 
 This issue isn't reproducible if the modal is in the same stack as the stack screen.
 
+## Steps to Reproduce
+
+1. Run on a physical device:
+
+```
+npx expo run:ios --device
+```
+
+2. Navigate to `Freezable Stack`
+3. Tap `Open Second Screen`
+4. Tap `Open the external modal`
+5. In quick succession:
+    1. pull the modal down from the top to dismiss it
+    2. swipe from the left edge of the screen to the right to go back
+6. You can no longer interact with the stack (tapping links will not work)
+7. Go to `Tab One` and back to `Freezable Stack` to reset
+
 ## Structure of the Navigation Stack
 
 ```mermaid
